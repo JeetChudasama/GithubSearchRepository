@@ -54,7 +54,7 @@ class RepoDetails : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                         .background(BackgroundColor)
                 ) {
-                    // Call the composable function to display the repository name
+                    // Calling the composable function to display the repository name & details
                     RepoDetailsContent(repoName ?: "No Repository Name",
                         repodescription ?: "No Description",
                         repoUrl ?: "No URL", ownerAvatarUrl
@@ -67,7 +67,7 @@ class RepoDetails : ComponentActivity() {
 
 @Composable
 fun RepoDetailsContent(repoName: String, repodescription: String, repoUrl: String, ownerAvatarUrl: String) {
-    // Display the repository name using Text composable
+    // Displaying the repository Details using Text composable
 
     val uriHandler = LocalUriHandler.current
     Column (

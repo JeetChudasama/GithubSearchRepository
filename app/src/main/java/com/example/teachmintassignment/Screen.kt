@@ -228,6 +228,6 @@ fun TopAppBar(
 fun Prev(){
     Screen(
         viewModel = ScreenViewModel(),
-        onCardClicked = { /* Dummy lambda, no action needed for preview */ }
+        onCardClicked = {}
     )
 }

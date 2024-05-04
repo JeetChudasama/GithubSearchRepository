@@ -25,7 +25,6 @@ data class GitHubRepo(
     val html_url: String? = "",
     val forks_count: Int,
     val owner: owner,
-    // Add other relevant fields as needed
 ): Serializable
 
 data class RepoSearchResponse(

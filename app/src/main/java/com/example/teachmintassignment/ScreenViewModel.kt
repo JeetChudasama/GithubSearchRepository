@@ -43,9 +43,9 @@ class ScreenViewModel(
                     searchRepoInList(searchQuery = userAction.text)
                 }
             }
-            UserAction.onCardClick -> {
-
-            }
+//            UserAction.onCardClick -> {
+//
+//            }
         }
     }
     private fun searchRepoInList(
@@ -66,7 +66,7 @@ class ScreenViewModel(
 sealed class UserAction {
     object SearchIconClicked: UserAction()
     object CLoseIconClicked: UserAction()
-    object onCardClick: UserAction()
+//    object onCardClick: UserAction()
     data class TextFieldInput(val text: String): UserAction()
 }
 

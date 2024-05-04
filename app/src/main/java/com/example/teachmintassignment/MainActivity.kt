@@ -15,7 +15,6 @@ class MainActivity : ComponentActivity(), RepoSearchListener {
         setContent {
             TeachmintAssignmentTheme {
                 val viewModel = viewModel<ScreenViewModel>()
-//                val navController = rememberNavController()
                 viewModel.listener = this@MainActivity
                 Screen(
                     viewModel = viewModel,
@@ -33,8 +32,6 @@ class MainActivity : ComponentActivity(), RepoSearchListener {
             putExtra("description", repo.description)
             putExtra("html_Url", repo.html_url)
             putExtra("owner", repo.owner)
-
-            // Add more data if needed
         }
         startActivity(intent)
     }
