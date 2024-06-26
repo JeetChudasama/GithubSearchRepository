@@ -163,9 +163,7 @@ fun RepoDetailsContent(repoName: String, repodescription: String, repoUrl: Strin
                     .size(maxWidth, maxWidth)
             )
         }
-
     }
-
 }
 
 @Preview

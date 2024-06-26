@@ -43,9 +43,6 @@ class ScreenViewModel(
                     searchRepoInList(searchQuery = userAction.text)
                 }
             }
-//            UserAction.onCardClick -> {
-//
-//            }
         }
     }
     private fun searchRepoInList(
@@ -59,14 +56,12 @@ class ScreenViewModel(
                 listener.onSearchError("Error searching repositories: ${e.message}")
             }
         }
-
     }
 }
 
 sealed class UserAction {
     object SearchIconClicked: UserAction()
     object CLoseIconClicked: UserAction()
-//    object onCardClick: UserAction()
     data class TextFieldInput(val text: String): UserAction()
 }
 
@@ -75,3 +70,5 @@ data class ScreenState(
     val isSearchBarVisible: Boolean = false,
     val repoList: List<GitHubRepo> = emptyList()
 )
+
+///

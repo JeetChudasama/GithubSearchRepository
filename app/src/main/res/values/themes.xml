@@ -5,3 +5,4 @@
         <item name="android:statusBarColor">@color/status_bar</item>
     </style>
 </resources>
+
